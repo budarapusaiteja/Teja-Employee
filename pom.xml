@@ -62,7 +62,7 @@
         </configuration>
 </plugin>
 		</plugins>
-		<finalName>springboot-crud-k8s</finalName>
+		<finalName>springboot-kubernetes</finalName>
 	</build>
 
 </project>
