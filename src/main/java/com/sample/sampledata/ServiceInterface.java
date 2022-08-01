@@ -8,3 +8,7 @@ public interface ServiceInterface {
 	public String push(EmployeeTable d) throws custexception2 ;
 
 }
+/*by default
+ * methods - public
+ * all fields - public, static, final 
+ */

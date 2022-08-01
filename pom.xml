@@ -7,7 +7,7 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
-	</parent>
+	</parent>	
 	<groupId>com.sample</groupId>
 	<artifactId>sample-data</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -51,6 +51,16 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.5</version>
+        <configuration>
+            <skipTests>false</skipTests>
+            <testFailureIgnore>true</testFailureIgnore>
+            <forkMode>once</forkMode>
+        </configuration>
+</plugin>
 		</plugins>
 		<finalName>springboot-crud-k8s</finalName>
 	</build>
